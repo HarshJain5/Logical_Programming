@@ -1,6 +1,6 @@
 package BASIC;
 
-public class Palindrone {
+public class Palindrome {
     public static boolean isPalindrome(int n){
         int num = n;
         int rev = 0;
