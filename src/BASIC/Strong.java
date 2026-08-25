@@ -17,7 +17,7 @@ public class Strong {
     }
 
     public static void main(String[] args) {
-        int n = 1452;  //120+24+1
+        int n = 145;  //120+24+1
         System.out.println(isStrong(n) ? "Number is Strong." : "Number is not Strong.");
     }
 }

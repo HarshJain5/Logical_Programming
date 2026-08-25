@@ -11,6 +11,24 @@ public class Armstrong {
         return count;
     }
 
+//    public static int power(int n, int p){
+//        p = countDigit(n);
+//
+//        int pow = 1;
+//        while (n > 0){
+//            int digit = n%10;
+//            for (int i=1; i<=p; i++){
+//                pow = pow * digit;
+//            }
+//        }
+//        return pow;
+//    }
+//
+//    public static boolean isArmStrong(int n){
+//        int sum = 0;
+//
+//    }
+
     public static boolean isArmStrong(int n) {
     int count = countDigit(n) ; int num=n ;
     int sum = 0 ;
@@ -24,9 +42,6 @@ public class Armstrong {
         sum = sum + res ;
         n = n / 10 ;
     }
-
-
-
         return sum == num;
     }
     public static void main(String[] args) {
