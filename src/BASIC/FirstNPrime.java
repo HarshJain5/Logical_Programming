@@ -23,9 +23,14 @@ public class FirstNPrime {
         System.out.println("Enter the Value: ");
         int n = sc.nextInt();
 
-        for (int i=1; i<=n; i++){
-            if (isPrime(i))
-                System.out.println(i);
+        int count = 0;
+        int number = 2;
+        while (count<n){//2<3
+            if (isPrime(number)) {//3
+                System.out.println(number);
+                count++;//2
+            }
+            number++;//4
         }
     }
 }
