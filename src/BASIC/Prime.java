@@ -13,7 +13,7 @@ public class Prime {
     }
 
     public static void main(String[] args) {
-        int n = 3;
+        int n = 4;
 
         if (isPrime(n)){
             System.out.println(n+ " is Prime Number");
