@@ -1,12 +1,12 @@
 package Patterns;
 //
 //        A
-//      a b
+//      A B
 //    A B C
-//  a b c d
+//  A B C D
 //A B C D E
 
-public class Program21 {
+public class Program20 {
     public static void main(String[] args) {
         int n = 5;
         for (int i = 1; i <= n; i++){
@@ -14,11 +14,7 @@ public class Program21 {
                 System.out.print("  ");
             }
             for (int k = 1; k <= i; k++){
-                if (i%2==0){
-                    System.out.print((char)(k+96)+" ");
-                }else{
-                    System.out.print((char)(k+64)+" ");
-                }
+                System.out.print((char)(k+64)+" ");
             }
             System.out.println();
         }
