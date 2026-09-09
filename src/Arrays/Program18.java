@@ -1,9 +1,10 @@
 package Arrays;
 
-public class Program15 {
+public class Program18 {
     public static void main(String[] args) {
-        int a[] = {2, 3, 7, 3, 2, 2, 1};
+        int a[] = {10,20,10,30,20,40};
         boolean b[] = new boolean[a.length];
+
         for (int i = 0; i <= a.length-1; i++){
             if (b[i] == false){
                 int count = 1;
@@ -13,7 +14,10 @@ public class Program15 {
                         b[j] = true;
                     }
                 }
-                System.out.println(a[i]+"->"+count);
+                if (count<=1){
+                    System.out.println(a[i]+"->"+count);
+                    break;
+                }
             }
         }
     }

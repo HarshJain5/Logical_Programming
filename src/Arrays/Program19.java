@@ -1,9 +1,12 @@
 package Arrays;
 
-public class Program15 {
+public class Program19 {
     public static void main(String[] args) {
-        int a[] = {2, 3, 7, 3, 2, 2, 1};
+        int a[] = {10,20,10,30,20,40,20};
         boolean b[] = new boolean[a.length];
+
+        int maxCount = 0;
+        int mostRepeatedEle = a[0];
         for (int i = 0; i <= a.length-1; i++){
             if (b[i] == false){
                 int count = 1;
@@ -13,8 +16,12 @@ public class Program15 {
                         b[j] = true;
                     }
                 }
-                System.out.println(a[i]+"->"+count);
+                if (count>maxCount){
+                    maxCount = count;
+                    mostRepeatedEle = a[i];
+                }
             }
         }
+        System.out.println(mostRepeatedEle);
     }
 }

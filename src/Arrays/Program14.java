@@ -14,7 +14,6 @@ public class Program14 {
         }
         for (int i = x; i >= 0; i--){
             a[i] = 0;
-            x--;
         }
         System.out.println(Arrays.toString(a));
     }
